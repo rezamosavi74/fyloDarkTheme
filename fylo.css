@@ -1,0 +1,381 @@
+body {
+    background-color: hsl(218, 28%, 13%);
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway';
+}
+
+nav {
+    display: flex;
+    background-color: hsl(217, 28%, 15%);
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+}
+
+li {
+    margin: 0 10;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.intro {
+    padding-bottom: 100px;
+}
+
+.bg {
+    background-image: url(bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: hsl(217, 28%, 15%);
+    padding: 0 45;
+}
+
+.continue {
+    padding: 0 45;
+}
+
+.info, .advise, .access {
+    width: 90%;
+    margin: 0 auto 100px;
+    
+}
+
+.intro img, .stay img {
+    width: 100%;
+}
+
+.infelement {
+    margin-bottom: 100px;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: hsl(198, 60%, 50%);
+    cursor: pointer;
+    outline: none;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: hsl(176, 68%, 64%);
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 20px;
+}
+
+.advise {
+    text-align: left;
+}
+
+.advise a {
+    color: hsl(176, 68%, 64%);
+}
+
+.border {
+    display: inline-block;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.border img {
+    vertical-align: text-bottom;
+}
+
+.staypar a:hover {
+    color: white;
+}
+
+.staypar a:hover #arr {
+    filter: brightness(2) contrast(4);
+}
+
+.commentcontainer {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.commentcontainer::before {
+    content: url(bg-quotes.png);
+    position: absolute;
+    top: -45px;
+    left: 10%;
+}
+
+.frtcomment, .seccomment, .trdcomment {
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsl(219, 30%, 18%);
+    text-align: left;
+    border-radius: 5px;
+}
+
+.seccomment {
+    margin: 20px auto;
+}
+
+.commentcontainer p {
+    padding: 20px;
+    margin: 0;
+}
+
+.piccomment {
+    display: flex;
+    padding: 20px;
+}
+
+.piccomment img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+h5, small {
+    margin: 7px;
+}
+
+.access {
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+footer {
+    text-align: left;
+    background-color: hsl(216, 53%, 9%);
+    padding: 50px 5%;
+}
+
+.location, .phone, .mail {
+    display: flex;
+}
+
+.location, .mail {
+    margin: 20px auto;
+}
+
+footer img {
+    height: 18;
+    margin-right: 20px;
+}
+
+footer a img {
+    height: auto;
+}
+
+.location p, .phone p, .mail p {
+    margin: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    margin: 10px auto;
+}
+
+.frtul ul {
+    margin-top: 100px;
+}
+
+.secul ul {
+    margin: 50px auto;
+}
+
+.icon {
+    text-align: center;
+    margin: 100px auto 0;
+}
+
+i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: hsl(176, 68%, 64%);
+}
+
+p {
+    line-height: 1.5;
+}
+
+@media screen and (min-width:600px) {
+
+    nav {
+        padding: 30px 50px;
+    }
+
+    nav li {
+        margin: 0 30px;
+    }
+    
+    .intro {
+        background-image: url(bg-curvy-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: hsl(217, 28%, 15%);
+    }
+
+    .intro img {
+        width: 50%;
+    }
+
+    .bg {
+        background: none;
+    }
+
+    .bg h1 {
+        max-width: 50%;
+        margin: 0 auto;
+        font-size: 2.5em;
+        line-height: 1.5;
+        padding-top: 20px;
+    }
+
+    .continue {
+        padding: 100px 45px;
+    }
+
+    .continue p {
+        max-width: 40%;
+        margin: 0 auto;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .infelement {
+        flex: 50%;
+    }
+
+    .infelement img {
+        height: 88px;
+    }
+
+    .infelement p {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .stay, .staypar {
+        flex: 50%;
+    }
+
+    .staypar {
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+    .staypar h1 {
+        width: 70%;
+        font-size: 2.5em;
+        line-height: 1.5;
+    }
+
+    .staypar p {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    .advise, .commentcontainer, .foot {
+        display: flex;
+    }
+
+    .commentcontainer::before {
+        left: 1.8%;
+        top: -35px;
+        z-index: -1;
+    }
+
+    .commentcontainer p {
+        padding-top: 50;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    .frtcomment, .seccomment, .trdcomment {
+        width: 30%;
+    }
+
+    .seccomment {
+        margin: 0;
+    }
+
+    .access {
+        width: 60%;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer>a {
+        display: inline-block;
+        padding-top: 50px;
+        padding-left: 70px;
+    }
+
+    .foot {
+        padding: 50px;
+    }
+
+    .conect, .icon {
+        flex: 20%;
+        padding: 20px;
+    }
+
+    .location {
+        flex: 35%;
+        padding: 20px;
+    }
+
+    .frtul, .secul {
+        flex: 10%;
+        padding: 20px;
+    }
+
+    .foot ul {
+        margin: 0;
+    }
+
+    .foot li {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .location, .icon {
+        margin: 0;
+    }
+
+}
